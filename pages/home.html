@@ -1,0 +1,427 @@
+
+<div class="main-home" ng-controller="HomeController"> 
+    <div class="slideshow">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active img-container">
+                    <img src="./assets/img/car-93.jpg"  class="d-block w-100 img-item" alt="fade-down" >
+                    <div class="carousel-caption carousel-content">
+                        <h5 class="welcome-title" data-aos="fade-down" data-aos-duration="2500">WELCOME TO CARRIO MOTORS ! </h5>
+                        <p class="main-title" data-aos="fade-right" data-aos-duration="2500">Best Way To Find Your Dream Car</p>
+                        <p class="main-des" data-aos="zoom-in">
+                            We provide the best solution for your car needs. <br>Buy your cars on Carrio Motors.      
+                        </p>
+                        <a href="#!/product"><button class="btn-buy-now" data-aos="zoom-in-right">Buy now</button></a>
+                        <a href="#!/about"><button class="btn-buy-now" data-aos="zoom-in-left">Abous us</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item img-container">
+                    <img src="./assets/img/car-7.jpg"  class="d-block w-100 img-item" alt="">
+                    <div class="carousel-caption carousel-content">
+                        <h5 class="welcome-title" data-aos="fade-down" data-aos-duration="2500">WE ARE SINCE 1970</h5>
+                        <p class="main-title" data-aos="fade-in" data-aos-duration="2500">Buy Your Car Quickly And Easily</p>
+                        <p class="main-des">
+                            We believe in making simple and fair pricing plans. <br>Choose your next successful plan and get started today!       
+                        </p>
+                        <a href="#!/product"><button class="btn-buy-now">Buy now</button></a>
+                        <a href="#!/contact"><button class="btn-buy-now">Contact us</button></a>
+
+                    </div>
+                </div>
+                <div class="carousel-item img-container">
+                    <img src="./assets/img/car-6.jpg" style="height: 550px;" class="d-block w-100 img-item" alt="">
+                    <div class="carousel-caption carousel-content d-none d-md-block">
+                        <h5 class="welcome-title">WE ARE THE BEST</h5>
+                        <p class="main-title">Your vehicle is safe with us</p>
+                        <p class="main-des">
+                            Improve your business with us. <br>Choose your next successful plan and get started today!       
+                        </p>
+                        <a href="#!/product"><button class="btn-buy-now">Explore</button></a>
+                        <a href="#!/register"><button class="btn-buy-now">Sign up</button></a>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+    </div>
+
+
+
+
+    <!--
+        <div class="header-img-video" data-aos="fade-right">
+        <img class="header-img"src="./assets/img/car-2.jpg" alt="img" >
+    </div>
+
+    -->
+    
+    
+    <div class="car-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="car-quick-search" data-aos="fade-right">
+                        <div class="car-search-title">
+                            Find your dream car
+                        </div>
+                 
+                        <form action="" class="car-search-category-1">
+                            <div class="car-search-radio">
+                                <input type="radio" id="allCar" name="carOption"value="allCar">
+                                <label for="allCar" class="car-option-label">All cars</label>
+                            </div>
+                            <div class="car-search-radio">
+                                <input type="radio" id="newCar" name="carOption" value="newCar">
+                                <label for="newCar" class="car-option-label">New cars</label>
+                            </div>
+                            <div class="car-search-radio">
+                                <input type="radio" id="usedCar" name="carOption" value="usedCar">
+                                <label for="usedcar" class="car-option-label">Used cars</label>    
+                            </div>                                                              
+                        </form>
+               
+                        <form class="car-search-category-2" method="get">
+                            <div class="car-option">
+                                <label class="car-option-title" for="">Make</label><br>
+                                <select class="car-option-control" name="" id="">
+                                    <option value="">All makes</option>
+                                    <option value="">Audi</option>
+                                    <option value="">BMW</option>
+                                    <option value="">Huyndai</option>
+                                    <option value="">Jeep</option>
+                                    <option value="">Kia</option>
+                                    <option value="">Morris Garage </option>
+                                    <option value="">Suzuki</option>                                   
+                                </select>
+                            </div>
+                            
+                            <div class="car-option">
+                                <label class="car-option-title" for="">Model</label><br>
+                                <select class="car-option-control" name="" id="">
+                                    <option value="">All models</option>
+                                    <option value="">Model 1</option>
+                                    <option value="">Model 2</option>
+                                    <option value="">Model 3</option>
+                                    <option value="">Model 4</option>
+                                    <option value="">Model 5</option>
+                                </select>  
+                            </div>
+                
+                            <div class="car-option">
+                                <label class="car-option-title" for="">Price Range</label><br>
+                                <select class="car-option-control" name="" id="">
+                                    <option value="8000-200000">All price ranges</option>                             
+                                    <option value="8000-15000">15000 or below</option>
+                                    <option value="15000-20000">15000-20000</option>
+                                    <option value="20000-30000">20000-30000</option>
+                                    <option value="30000-40000">30000-40000</option>
+                                    <option value="40000-50000">40000-50000</option>
+                                    <option value="50000-60000">50000-60000</option>
+                                    <option value="60000-70000">60000-70000</option>
+                                    <option value="70000-80000">70000-80000</option>
+                                    <option value="80000-200000">80000 or higher</option>                           
+                                </select>              
+                            </div>     
+                            <div class="car-option">
+                                <label class="car-option-title" for="">Year</label><br>
+                                <select class="car-option-control" name="" id="">
+                                    <option value="">All years</option>
+                                    <option value="">2018</option>
+                                    <option value="">2019</option>
+                                    <option value="">2020</option>
+                                    <option value="">2021</option>
+                                    <option value="">2022</option>
+                                    <option value="">2023</option>
+                                    <option value="">2024</option>
+                                </select>             
+                            </div>                                                    
+                        </form>   
+                        <a href="#!/product"><button class="btn-car-search">Search</button></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="company-intro" data-aos="zoom-in">                                 
+                        <p class="about-company-title">
+                            About Company
+                        </p>
+                        <h2 class="about-carrio-title">About Carrio Motors </h2>
+                        <p class="about-company-overall">
+                            Carrio Motors is one of the fastest growing Dealerships. We focus on delivering high Customer Satisfaction Standards. 
+                            All employees are committed to provide service with Discipline, 
+                            Focus and Speed, by following all Standard Operating Processes defined by our company.<br>
+                            The company aims to break new ground by harnessing the power of technology and revolutionizing processes to make car ownership for the customers a truly enjoyable and hassle-free experience. 
+                            So taking into consideration the expanding business, 
+                            the company planned to host the primary information through its website.
+                        </p>
+                        <a href="#!/about"><button class="btn-about-us">More about us</button></a>
+                                                                
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="car-brand">
+        <h2 class="car-brand-title">Search by Make</h2>
+        <div class="car-brand-item"> 
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/audi.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/bmw.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/chevrolet.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/ford.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/honda.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/hyundai.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/jeep.png" alt=""><br></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/kia.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/lamborghini.png" alt=""></a>
+            <a href="#!/product"> <img class="car-brand-img" src="./assets/img/brands.logo/mazda.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/mercedes-benz.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/morris-garages.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/suzuki.png" alt=""></a>
+            <a href="#!/product"><img class="car-brand-img" src="./assets/img/brands.logo/toyota.png" alt=""></a>      
+        </div>
+    </div>
+
+    <div class="car-type">
+        <h2 class="car-brand-title">Search by Type</h2>
+        <div class="car-type-content">
+            <div style="margin-left: 11rem;" class="car-type-item">
+                <a href="#!/product"><img src="./assets/img/car.types.img/convertible.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">Convertible</p>
+                </a>
+            </div>
+            <div class="car-type-item">
+                <a href="#!/product">
+                    <img src="./assets/img/car.types.img/coupe.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">Couple</p>
+                </a>
+            </div>
+            <div class="car-type-item">
+                <a href="#!/product">
+                    <img src="./assets/img/car.types.img/crossover.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">Crossover</p>            
+                </a>               
+            </div>
+            <div class="car-type-item">
+                <a href="#!/product">
+                    <img src="./assets/img/car.types.img/hatchback.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">Hatchback</p>
+                </a>                
+            </div>
+            <div class="car-type-item">
+                <a href="#!/product">
+                    <img src="./assets/img/car.types.img/sedan.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">Sedan</p>
+                </a>               
+            </div><br>
+            <div style="margin-left: 16rem;"  class="car-type-item">
+                <a href="#!/product">
+                    <img src="./assets/img/car.types.img/suv.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">SUV</p>
+                </a>       
+            </div>
+            <div class="car-type-item">
+                <a href="#!/product">
+                    <img src="./assets/img/car.types.img/truck.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">Truck</p>
+                </a>                    
+            </div>
+            <div class="car-type-item">
+                <a href="#!/product">
+                    <img src="./assets/img/car.types.img/minivan.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">Van/Minivan</p>
+                </a>     
+            </div>
+            <div class="car-type-item">
+                <a href="#!/product">
+                    <img src="./assets/img/car.types.img/wagon.webp" alt="" class="car-type-img">
+                    <p class="car-type-title">Wagon</p>
+                </a>                 
+            </div>    
+        </div>
+    </div>
+    
+    <div class="why-company">
+        <img src="./assets/img/car-100.jpg" alt="" class="why-company-background">
+        <div class="why-company-total">
+            <h2 class="why-company-title">
+                Why Carrio Motors?
+            </h2>
+            <div class="why-company-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="why-company-item">
+                                <i  class=" fa-solid fa-coins fa-2xl why-company-icon"></i>
+                                <p class="choice-reason-title">
+                                    Transparent pricing
+                                </p>
+                                <p class="choice-reason-content">
+                                    No surprises here. <br>
+                                    See how much you'll pay <br>on cars you like.
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="col-md-4">
+                            <div class="why-company-item">
+                                <i  class="fa-regular fa-clock fa-2xl why-company-icon"></i>
+                                <p class="choice-reason-title">
+                                    Minutes, not hours
+                                </p>
+                                <p class="choice-reason-content">
+                                    Time saving tools to help you <br>find the right car in a snap.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="why-company-item">
+                                <i  class="fa-solid fa-car-side fa-2xl why-company-icon"></i>
+                                <p class="choice-reason-title">
+                                    Shop your way
+                                </p>
+                                <p class="choice-reason-content">
+                                    Your own pace, your own space. <br>Shop online where and when <br>it's convenient for you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#!/register"><button class="btn-sign-up2">Sign up</button></a>
+        </div>
+        
+    </div>
+    <div class="best-seller">
+        <div class="container">
+            <div class="row">
+                <h2 class="best-seller-title">Best seller cars</h2>
+                <div ng-repeat="car in carList | orderBy: '-sale' | limitTo: 8" class="col-md-3">
+                    <div class="best-seller-item">
+                        <div class="bestseller-img-container">
+                            <a href="#!/product"><img src="{{ car.thumbnail }}" alt="" class="best-seller-img"></a>
+                        </div>
+                        
+                        <div class="best-seller-text">
+                            <p class="body-type">{{ car.body_style }}</p>
+                            <p class="car-name">{{ car.year }} {{car.model}}</p>
+                            <!--<p class="year-make">2019</p>-->
+                            <p class="car-price">{{ car.price | currency: $ : 0}}</p>
+                            <div class="car-tech-des">
+                                <div class="car-tech-item">
+                                    <p class="tech-detail-title">TRANSMISSION</p>
+                                    <p class="tech-detail-des">{{ car.transmission }}</p>
+                                </div>
+                                                                                          
+                                <div class="car-tech-item">
+                                    <p class="tech-detail-title">FUEL</p>
+                                    <p class="tech-detail-des">{{ car.fuel }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#!/product"><button class="btn-view-detail">View Details</button></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="client-say">
+        <h3 class="client-say-title">
+            What Our Clients Say
+        </h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="client-say-item">
+                        <img src="" alt="" class="client-img">
+                        <p class="client-name">Amelia Rose</p>
+                        <p class="client-feedback">I had a great experience at Carrio Motors. 
+                            Found the exact car I wanted in tip-top shape at a fair price with excellent customer service and attention-to-detail.
+                            I highly recommend this dealership.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="client-say-item">
+                        <img src="" alt="" class="client-img">
+                        <p class="client-name">John-Paul</p>
+                        <p class="client-feedback">Smooth transaction and very helpful staff made my first car buying experience easy. 
+                            The crew have given me their full attention to all my car needs. 
+                            Thanks again for the great help!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="client-say-item">
+                        <img src="" alt="" class="client-img">
+                        <p class="client-name">Sarah Jane</p>
+                        <p class="client-feedback">Great experience, Carrio Motors was very good and the sale took place very quick and was able to secure transportation 2 days after the purchase.
+                             Car got the my home in a timely fashion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="latest-news">
+        <h3 class="latest-news-title">Latest News</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="latest-new-item">
+                        <img src="assets\img\products\kia\forte\p1\forte_2023_1.jpg" alt="" class="lastest-new-img">
+                        <p class="news-date">18 August</p>
+                        <p class="news-title">
+                            2024 Acura ZDX Revealed with Spicy 500-HP Type S Variant                             
+                        </p>
+                        <p class="news-overall">
+                            The 2024 Acura ZDX debuts as the brand's first EV, and the mid-size SUV is based on GM's Ultium battery platform.
+                        </p>
+                        <button class="btn-read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="latest-new-item">
+                        <img src="assets\img\products\jeep\renegade\p1\renegade_2023_1.jpg" alt="" class="lastest-new-img">
+                        <p class="news-date">19 August</p>
+                        <p class="news-title">
+                            2023 Jeep Gladiator FarOut Edition Marks the Diesel Engine's End                                
+                        </p>
+                        <p class="news-overall">
+                            The 2023 Jeep Gladiator adds the limited-production Rubicon FarOut edition.
+                        </p>
+                        <button class="btn-read-more">Read More</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="latest-new-item">
+                        <img src="assets\img\products\bmw\x3\p1\x3_2023_1.jpg" alt="" class="lastest-new-img">
+                        <p class="news-date">20 August</p>
+                        <p class="news-title">
+                            2024 Hyundai Santa Fe's Most Notable Features                             
+                        </p>
+                        <p class="news-overall">
+                            Hyundai's taking advantage of UV-C light's ability to kill various viruses and bacteria by fitting the 2024 Santa Fe with an available UV-C sanitizer tray.
+                        </p>
+                        <button class="btn-read-more">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>           
+</div>

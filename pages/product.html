@@ -1,0 +1,285 @@
+<div class="main-product" ng-controller="ProductController">
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 side-bar-control">
+                <div class="sidebar" data-aos="zoom-in-right">
+                    <div class="product-search-title">
+                            ADVANCED SEARCH
+                    </div>
+                    <div class="advanced-search-content">
+                        <form action="" method="get">
+                            <label for="" class="advanced-search-title">Brand</label>
+                            <select class="advanced-search-control" name="" id="" ng-model="brandId">                             
+                                <option value="">All makes</option>
+                                <option ng-repeat="brand in brandList track by $index" value="{{ brand.id }}">{{ brand.name }}</option>
+                            </select>
+
+                            <label for="" class="advanced-search-title">Model</label>
+                            <select class="advanced-search-control" name="" id="" ng-model="modelId">
+                                <option value="">Any model</option>
+                                <option ng-repeat="model in modelList | filter:{brand_id: brandId}" >{{ model.name }}</option>
+                            </select>
+
+                            <label for="" class="advanced-search-title">Body Style</label>
+                            <select class="advanced-search-control" name="" id="" ng-model="bodyStyle">
+                                <option value="">Any Body Style</option>
+                                <option ng-repeat="bodyStyle in bodyStyleList track by $index" value="{{ bodyStyle }}">{{ bodyStyle }}</option>
+                            </select>
+
+                            <label for="" class="advanced-search-title">Year</label>
+                            <select class="advanced-search-control" name="" id="" ng-model="year">
+                                <option value="">All years</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>                            
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+
+                            <label for="" class="advanced-search-title">Price</label>
+                            <select class="advanced-search-control" name="" id="" ng-model="rangePrice">
+                                <option value="8000-200000">All price ranges</option>                             
+                                <option value="8000-15000">15000 or below</option>
+                                <option value="15000-20000">15000-20000</option>
+                                <option value="20000-30000">20000-30000</option>
+                                <option value="30000-40000">30000-40000</option>
+                                <option value="40000-50000">40000-50000</option>
+                                <option value="50000-60000">50000-60000</option>
+                                <option value="60000-70000">60000-70000</option>
+                                <option value="70000-80000">70000-80000</option>
+                                <option value="80000-200000">80000 or higher</option>
+                            </select>
+
+                            <label for="" class="advanced-search-title">Fuel Type</label>
+                            <div class="input-option">
+                                <input class="input-circle" type="radio" name="fuelType" value="diesel" ng-model="fuel">
+                                <label for="diesel" class="input-option-label">Diesel</label>
+                            </div>
+                            <div class="input-option">                               
+                                <label for="petrol" class="input-option-label">
+                                    <input class="input-circle" type="radio" name="fuelType" value="petrol" ng-model="fuel">Petrol
+                                </label>
+                            </div>
+                            <div class="input-option">                        
+                                <label for="electric" class="input-option-label">
+                                    <input class="input-circle" type="radio" name="fuelType" value="electric" ng-model="fuel">Electric
+                                </label>
+                            </div>                       
+                            <div class="input-option">                                
+                                <label for="hybrid" class="input-option-label">
+                                    <input class="input-circle" type="radio" name="fuelType" value="hybrid" ng-model="fuel">Hybrid
+                                </label>
+                            </div>
+                            <label for="" class="advanced-search-title">Transmission</label>
+                            <div class="input-option">                              
+                                <label for="manual" class="input-option-label"> 
+                                    <input class="input-circle" type="radio" name="transmission" value="manual" ng-model="transmission">Manual
+                                </label>
+                            </div>
+                            <div class="input-option">                             
+                                <label for="automatic" class="input-option-label">
+                                    <input class="input-circle" type="radio" name="transmission" value="automatic" ng-model="transmission">Automatic
+                                </label>
+                            </div>
+                                                  
+                            <label for="" class="advanced-search-title">Colour</label>
+                            <select class="advanced-search-control" name="" id="" ng-model="colour">
+                                <option value="">Any colour</option>
+                                <option value="beige">Beige</option>
+                                <option value="black">Black</option>
+                                <option value="blue">Blue</option>
+                                <option value="brown">Brown</option>
+                                <option value="copper">Copper</option>
+                                <option value="gold">Gold</option>
+                                <option value="gray">Gray</option>
+                                <option value="green">Green</option>
+                                <option value="maroon">Maroon</option>
+                                <option value="orange">Orange</option>
+                                <option value="purple">Purple</option>
+                                <option value="red">Red</option>
+                                <option value="silver">Silver</option>
+                                <option value="tan">Tan</option>
+                                <option value="teal">Teal</option>
+                                <option value="white">White</option>
+                                <option value="yellow">Yellow</option>                                                                    
+                            </select>
+
+                            <label for="" class="advanced-search-title">Drive Type</label>
+                            <select class="advanced-search-control" name="" id="" ng-model="driveType">
+                                <option value="">Any drive type</option>
+                                <option value="fwd">FWD</option>
+                                <option value="rwd">RWD</option>
+                                <option value="awd">AWD</option>
+                                <option value="4wd">4WD</option>
+                            </select>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div ng-repeat="car in carList | filter: {brand_id: brandId, model: modelId, body_style: bodyStyle, year: year, fuel: fuel, transmission: transmission, colour: colour, drive_type: driveType} 
+                | filter: filterByPrice(rangePrice) 
+                | filter: filterByBrandAndModel()" class="product-info">
+                    <div class="product-items">
+                        <div class="product-title">
+                            <p  class="product-name" >{{car.year}} {{car.model}}</p>                        
+                            <i class="fa-regular fa-heart fa-xl" style="color:rgb(0,70,108);"></i>
+                        </div>
+                        <!-- Begin Modal -->
+                        <div class="container">
+                            <div class="modal fade" id="exampleModal-{{$index}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">                        
+                                <div class="modal-dialog  modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title"> {{car.year}} {{car.model}}</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                                         
+                                        </div>
+                                        <div class="modal-body">                           
+                                            <div class="main-detail">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-6"><img class="main-product-img" src="{{car.thumbnail}}" alt=""></div>                                                       
+                                                        <div class="col-md-3">
+                                                            <img class="detail-product-img" src="{{car.url2}}" alt="">
+                                                            <img class="detail-product-img" src="{{car.url3}}" alt="">
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <img class="detail-product-img" src="{{car.url4}}" alt="">
+                                                            <img class="detail-product-img" src="{{car.url5}}" alt="">
+                                                        </div>                                                                                                                                                                                                        
+                                                    </div>                                                  
+                                                    <div class="row">
+                                                        <div class="col-md-8">                                       
+                                                            <div class="main-detail-content">                                     
+                                                                <div class="car-item-overview">
+                                                                    <div class="vehicle-overview-title">Overview</div>
+                                                                    <div class="car-detail-content">
+                                                                        <div class="car-tech-detail">
+                                                                            <i class="fa-solid fa-truck-monster fa-2xl"></i>
+                                                                            <div class="car-tech-item">
+                                                                                <span class="car-tech-title">Transmission</span><br>
+                                                                                <span class="car-tech-content">{{car.transmission}}</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="car-tech-detail">
+                                                                            <i class="fa-solid fa-gas-pump fa-2xl"></i>
+                                                                            <div class="car-tech-item">
+                                                                                <span class="car-tech-title">Fuel type</span><br>
+                                                                                <span class="car-tech-content">{{car.fuel}}</span>
+                                                                            </div>
+                                                                        </div>                                                                    
+                                                                        <div class="car-tech-detail">
+                                                                            <i class="fa-solid fa-car-side fa-2xl"></i>
+                                                                            <div class="car-tech-item">
+                                                                                <span class="car-tech-title">Body type</span><br>
+                                                                                <span class="car-tech-content">{{car.body_style}}</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="car-tech-detail">
+                                                                            <i class="fa-brands fa-superpowers fa-2xl"></i>
+                                                                            <div class="car-tech-item">
+                                                                                <span class="car-tech-title">Engine <span class="engine-detail-info">Cylinders/Horsepower/Torque</span></span><br>
+                                                                                <span class="car-tech-content">{{car.cylinders}}/ {{car.horsepower}} HP/ {{car.torque}} ft.lbs.</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="car-tech-detail">
+                                                                            <i class="fa-solid fa-gears fa-2xl"></i>
+                                                                            <div class="car-tech-item">
+                                                                                <span class="car-tech-title">Drive type</span><br>
+                                                                                <span class="car-tech-content">{{car.drive_type}}</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="car-tech-detail">
+                                                                            <i class="fa-solid fa-person-circle-check fa-2xl"></i>
+                                                                            <div class="car-tech-item">
+                                                                                <span class="car-tech-title">Passenger Capacity</span><br>
+                                                                                <span class="car-tech-content">{{car.passenger_capacity}}</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="car-tech-detail">
+                                                                            <i class="fa-regular fa-calendar-check fa-2xl"></i>
+                                                                            <div class="car-tech-item">
+                                                                                <span class="car-tech-title">Bumper to bumper warranty</span><br>
+                                                                                <span class="car-tech-content">{{car.warranty}}</span>
+                                                                            </div>
+                                                                        </div>                                
+                                                                    </div>                                                               
+                                                                </div>   
+                                                                    
+                                                                <div class="vehicle-item-detail">
+                                                                    <div class="vehicle-detail-title">Vehicle Detail</div>                   
+                                                                    
+                                                                    <!-- {{car.description}}-->
+                                                                    <div class="car-detail-content">
+                                                                        Run flat tyres, Alarm, Immobiliser, Remote central locking, Audio remote control, 
+                                                                        Auxiliary input socket, DAB Digital radio, USB connection, 3 point front seat belts, 
+                                                                        ABS+Electronic Brake force Distribution, Active front headrests, Cornering brake control (CBC), 
+                                                                        Driver and passenger side airbags, Driver/Front Passenger airbags, Drivers knee airbag, DSTC-Dynamic Stability and Traction Control, 
+                                                                        Dynamic brake control, Electronic parking brake, Front seatbelt pretensioners with force limiters, Tyre pressure monitor,
+                                                                        Aluminium bonnet, Automatic headlights, Automatic rain sensing wipers, Automatic retraction of front spirit of ecstasy, Automatic soft closing doors and boot lid, Body coloured bumpers, 
+                                                                        Electric door mirrors, Electric front windows, Front fog lights, Grey tinted upper strip on windscreen, Heated door mirrors, Heated rear window, Heated washer jets, Laminated side windows, 
+                                                                        LED rear lights, Rear electric windows, Xenon headlights + headlight washers, 2x 12V sockets, 4 zone climate control, Adjustable lumbar support, Centre console storage, Electric driver and passenger seats,
+                                                                        Fitted umbrellas - 2 Rolls Royce, Front centre armrest, Front head restraints, Heated front seats, Height adjustable drivers seat, Isofix child seat preparation, Leather multi function steering wheel, Power closing door, 
+                                                                        Rake/reach adjustable steering wheel, Rear centre armrest, Rear cupholders, Rear headrests, Bluetooth system, Mobile App interface, On board computer, Parking distance sensors front and rear, PAS, Reverse parking aid, Rolls-Royce Assist Telematics Services, 
+                                                                        Satellite Navigation with colour screen, Systems with voice recognition, Vehicle information centre, Electronic Damper Control (EDC-K),                   
+                                                                        Remember to check the details of this car with the dealer before you buy it to make sure that all the information is accurate.                                                                   
+                                                                    </div>
+                                                                </div>                                                                                                                                                                                                                                                            
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="sidebar-detail-content">                                                              
+                                                                <div class="car-price-detail">
+                                                                    <div class="vehicle-price-title">Estimated price<i class="fa-solid fa-circle-exclamation" style="margin-left: 0.5rem; color: grey;"></i></div>
+                                                                    <div class="vehicle-price">{{ car.price | currency: $ : 0}}</div>
+                                                                    <button class="financial-quote-btn">Get a financial quote</button>
+                                                                </div>
+                                                                <div class="dealer-detail">
+                                                                    <div class="vehicle-dealer-title">Get this vehicle</div>
+                                                                    <div class="dealer-location-title"><i class="fa-solid fa-location-dot" style="margin-right: 1.5rem;"></i>Pickup from dealership</div>
+                                                                    <div class="dealer-locat">{{car.dealer_location}}</div>
+                                                                    <div class="dealer-location-title"><i class="fa-solid fa-truck" style="margin-right: 1rem;"></i>Delivery</div>
+                                                                    <div class="dealer-locat">Contact dealer for options</div>                                                                                                                                                             
+                                                                    <button class="dealer-message-btn">Message Dealer</button>
+                                                                    <button class="live-chat-btn">Live Chat</button>
+                                                                </div>             
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">                                        
+                                            <button type="button" class=" btn btn-default" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                        <div class="product-overall-info">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal-{{$index}}"><img class="img-product" src="{{car.thumbnail}}" alt="" data-aos="zoom-in-right"></a>                        
+                            <div class="more-info">
+                                <div class="product-price">{{ car.price | currency: $ : 0}}</div>
+                                <div class="dealer-location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span class="locat-info">{{car.dealer_location}}</span>
+                                </div>
+                                <ul class="tech-info">
+                                    <li class="tech-info-detail">{{ car.body_style }}</li>
+                                    <li class="tech-info-detail" style="font-size: 40px;">&#183;</li>
+                                    <li class="tech-info-detail">{{ car.transmission }}</li>
+                                    <li class="tech-info-detail" style="font-size: 40px;">&#183;</li>
+                                    <li class="tech-info-detail">{{ car.fuel}}</li>
+                                </ul>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal-{{$index}}"><button class="btn-view-details">View details</button></a>                                                         
+                            </div>                           
+                        </div>
+                    </div>                         
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
