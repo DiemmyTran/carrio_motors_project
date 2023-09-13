@@ -1,0 +1,83 @@
+.main-gallery{ 
+  background-color: #ded2d2;
+}
+
+.main-gallery {
+  padding: 20px 5px 30px
+}
+
+.title_gallery {
+  padding: 20px;
+  font-size: 32px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: orange;
+}
+
+#gallery {
+  display: grid;
+  /*height: 300px;*/
+  grid-template: repeat(5, 1fr)/repeat(5, 1fr);
+  grid-gap: 0.5em;
+}
+
+@media (max-width: 800px) {
+  #gallery {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #gallery>div {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 350px) {
+  #gallery>div {
+    width: 98%;
+  }
+}
+
+#gallery>div:nth-child(6n+1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#gallery>div:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+#gallery>div:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+#gallery>div>img {
+  width: 100%;
+  min-height: 100%;
+  transition: all ease 1s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#gallery>div:hover img {
+  transform: scale(1.2);
+}
+
+#gallery>div {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#gallery div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}

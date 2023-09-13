@@ -1,0 +1,207 @@
+.main-detail{
+    padding-bottom: 3rem;
+    background-color: rgb(243,243,243);
+}
+
+.car-item-name{
+    font-size: 28px;
+    font-weight: 500;
+}
+.vehicle-overview-title{
+    color: rgb(2,85,138);
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(226, 224, 224);
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    background-color: rgb(205,236,255);
+}
+
+.car-item-overview{
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: 5px;
+    padding: 1rem;
+    
+    
+   
+}
+
+.vehicle-item-detail{
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+
+
+
+}
+
+.vehicle-detail-title{
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(226, 224, 224);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    color: rgb(2,85,138);
+    background-color: rgb(205,236,255);
+    padding-left: 1rem;
+}
+
+
+
+.car-detail-content{
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.car-tech-detail{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 17rem;
+    margin-right: 6rem;
+    border-bottom: 1px solid rgb(238, 231, 231);
+
+}
+
+.car-tech-item{
+    margin-left: 1rem;
+}
+
+.car-tech-title{
+    font-weight: bold;
+}
+
+.car-tech-content{
+    font-size: 18px;
+}
+
+.engine-detail-info{
+    color: grey;
+    font-weight: 500;
+}
+
+.car-price-detail{
+    
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(243, 230, 230);
+}
+
+.vehicle-price-title{
+    font-size: 17px;
+    margin-bottom: 0.5rem;
+    color: grey;
+}
+
+.vehicle-price{
+    font-weight: bold;
+    font-size: 30px;
+   
+}
+.financial-quote-btn{
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(253,101,2);
+    color: black;
+    height: 45px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.vehicle-dealer-title{
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.dealer-location-title{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.dealer-locat{
+    margin-left: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.dealer-detail{
+    background-color: white;
+    padding: 2rem;
+    margin-top: 2rem ;
+    border: 2px solid rgb(243, 230, 230);
+    border-radius: 5px;
+}
+
+
+
+.dealer-contact-title{
+    color: grey;
+    font-size: 17px;
+    margin-bottom: 1rem;
+}
+
+.dealer-name{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.dealer-phonenumber{
+    background-color: rgb(67, 60, 60);
+    color: white;
+    
+    width: 350px;
+    height: 50px;
+    border-radius: 150px;
+    text-align: center;
+    align-items: center;
+    font-size: 27px;
+}
+
+.dealer-message-btn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 300px;
+    background-color: rgb(253,101,2);
+    border: none;
+    border-radius: 5px;
+    margin-left: 1.5rem;
+
+
+}
+
+.live-chat-btn{
+    height: 45px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    border-radius: 3px;
+}
+
+.main-product-img{
+    width: 652px;
+    border-radius: 5px;
+}
+
+.detail-product-img{
+    width: 320px;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}

@@ -1,0 +1,174 @@
+.main-product{
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(243,243,243);
+    
+}
+
+.side-bar-control{
+    margin-left: -2rem;
+}
+
+.sidebar{
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding-left:1rem;
+    padding: 1rem 1rem;
+    background-color: white;
+    
+}
+
+.product-search-title{
+    margin-bottom: 2rem;
+    font-size: 22px;
+    color: rgb(0,70,108);
+    text-align: center;
+    border-bottom: 1px solid rgb(226, 221, 221);
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+.advanced-search-title {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.advanced-search-control{
+    width: 270px;
+    height: 50px;
+    border: 2px solid rgb(238, 236, 236);
+    border-radius: 7px;
+    
+}
+
+.input-option{
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.input-circle{
+    height: 25px;
+    width: 25px;
+    margin-right: 0.5rem;
+}
+
+option:hover{
+    border: gray;
+    background-color: gray;
+}
+
+.product-info{
+    margin-top: 1rem;
+    background-color: white;
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+    padding-bottom: 1.2rem;
+    padding-top: 1rem;
+    border-radius: 5px;
+}
+
+.product-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-name{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.img-product{
+    width:370px;
+}
+
+.product-overall-info{
+    display: flex;
+}
+
+.more-info{
+    width: 540px;
+    margin-left: 1rem;
+    align-items: top;
+}
+
+.product-price{
+    margin-top: 0.2rem;
+    font-size: 27px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(221, 219, 219);
+    padding-bottom: 0.5rem;
+}
+
+.dealer-location{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.locat-info{
+    margin-left: 0.5rem;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.tech-info{ 
+    display: flex;  
+    align-items: center;
+    background-color: rgb(243,243,243);
+    list-style: none; 
+    width: 540px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.tech-info-detail{
+    margin-right: 4.3rem;
+}
+
+.btn-view-details{
+    height: 45px;
+    width: 230px;
+    background-color: rgb(253,101,2);
+    font-size: 18px;
+    border: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 19.2rem;
+    border-radius: 5px;
+}
+
+.btn-view-details:hover{
+    background-color: orange;
+}
+
+.product.items{
+    margin-bottom: 2rem;
+}
+
+.modal-dialog{
+    margin-top: 5rem;
+}
+
+.moadal-content{
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.modal-body {
+    /* 100% = dialog height, 120px = header + footer */
+    max-height: calc(100% - 120px);
+    /*overflow-y: scroll;*/
+    padding: 0;
+    
+}
+
+.modal-title{
+    margin-left: 5rem;
+}
+
+

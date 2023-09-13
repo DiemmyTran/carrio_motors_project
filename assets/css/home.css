@@ -1,0 +1,394 @@
+.header-img{
+    width: 100%;
+}
+
+.car-search{
+    margin-top: 4rem;
+}
+
+.car-quick-search{
+    /*background-color: rgb(5,32,70);*/
+    background-color: rgb(5,32,70);
+    padding: 3rem 2rem 3rem 2rem;
+    border-radius: 10px;
+}
+
+.car-search-title{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+}
+
+.car-search-category-1{
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.car-option-label {
+    color: white;
+    font-size: 24px;
+}
+/*.btn-choice{
+    margin-right: 2rem;
+    font-size: 18px;
+    color: white;
+}*/
+.car-search-category-2{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+}
+
+.car-option-title{
+    color: white;
+}
+
+.car-option{
+    display: inline-block;
+}
+
+.car-option-control{
+    width: 270px;
+    height: 50px;
+    margin-top: 1rem;
+}
+
+.btn-car-search{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    background-color: rgb(253,101,2);
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-car-search:hover{
+    background-color: orange;
+}
+
+.company-intro{
+    margin-top: 2rem;
+}
+
+.about-company-title{
+    color: rgb(34,171,195);
+}
+
+.about-company-overall{
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+.btn-about-us{
+    background-color: rgb(253,101,2);
+    font-weight: 400;
+    height: 50px;
+    width: 170px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15rem;
+    margin-top: 2rem;
+}
+
+.btn-about-us:hover{
+    background-color: orange;
+}
+
+.car-brand{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+    border-bottom: 1px solid grey;
+    margin-bottom: 3rem;
+}
+
+/*.car-brand borderbottom{
+    
+    position: absolute;
+    left: 50%;
+}*/
+
+
+.car-brand-title{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.car-brand-item{
+    margin-left: 11rem;
+    /*margin-bottom: 5rem;*/
+}
+.car-brand-img{
+    width: 120px;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+.car-type-content{
+    margin-left: 7rem;
+    justify-content: center;
+}
+
+.car-type-item{
+    margin-right: 3.5rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.car-type-img{
+    width: 120px;
+}
+.car-type-title{
+    color: rgb(28, 116, 204);
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+}
+
+/*.why-company{
+    height: 400px;
+    background-image: url('../img/car-100.jpg');
+    background-size: cover;
+    color: white;
+    background-image: blur(8px);
+}*/
+
+.why-company{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-company-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.why-company-total{
+    align-items: center;
+    padding-top: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color with transparency */
+    backdrop-filter: blur(6px); /* Apply blur to the background */
+    color: white;
+
+}
+
+
+.why-company-title{
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+.why-company-content{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+
+.why-company-icon{
+    color: rgb(253,101,2);
+    margin-left: 12rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.btn-sign-up2{
+    margin-left: 43rem;
+    width: 130px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(253,101,2);
+}
+.btn-sign-up2:hover{
+    background-color: orangered;
+}
+
+
+.choice-reason-title{
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.choice-reason-content{
+    font-size: 20px;
+    align-items: center;  
+}
+
+.best-seller{
+    margin-top: 2rem;
+}
+
+.best-seller-title{
+    margin-bottom: 1.5rem;
+}
+
+.best-seller-item{
+    border: rgb(215, 210, 210) solid 1px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+   
+}
+
+.bestseller-img-container{
+    width: 305px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+
+}
+
+.best-seller-img{
+    width: 305px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+.best-seller-img:hover{
+    transform: scale(1.1);
+    
+}
+
+.best-seller-text{
+    padding:0.8rem;
+}
+
+.body-type{
+    color: grey;
+    
+}
+
+.car-name{
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: -1rem;
+}
+
+.car-price{
+    color: rgb(253,101,2);
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: -0.8rem;
+}
+
+.car-tech-des{
+    display: flex;
+    border-top: 1px solid rgb(208, 206, 206);
+    padding-top: 1rem;
+}
+
+.car-tech-item{
+    margin-right: 2.5rem;
+}
+
+.tech-detail-title{
+    color: grey;
+}
+
+.tech-detail-des{
+    margin-top: -0.7rem;
+    font-weight: 500;
+}
+
+.btn-view-detail{
+    height: 50px;
+    width: 272px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.btn-view-detail:hover{
+    color: black;
+    background-color: rgb(253,101,2);
+}
+
+.client-say{
+    margin-top: 4rem;
+    background-color: rgb(5,32,70);
+    color: white;
+}
+
+.client-say-title{
+    color:white;
+    text-align: center;
+    padding-top: 3rem;   
+}
+
+.client-say-item{
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    font-size: 18px;
+    
+    
+}
+.latest-news{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.latest-news-title{
+    margin-left: 7rem;
+}
+.latest-new-item{
+    margin-top: 2rem;
+}
+
+.lastest-new-img{
+    width: 400px;
+    height: 300px;
+}
+
+.btn-read-more{
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px; 
+}
+
+.btn-read-more:hover{
+    color: black;
+    background-color: rgb(253,101,2);
+}
+
+.news-overall{
+    margin-bottom: 4rem;
+}
+

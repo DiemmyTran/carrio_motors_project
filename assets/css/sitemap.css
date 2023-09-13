@@ -1,0 +1,148 @@
+.main-sitemap {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    background-color: rgb(243,243,243);
+}
+
+.text-sitemap {
+    padding-bottom: 1rem;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-sitemap a {
+    color: rgb(0,70,108);
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+.text-sitemap a:hover{
+    color: #879BC6 ;
+    transform: scale(1.2);
+        -webkit-transform: scale(1.2); 
+        -moz-transform: scale(1.2); 
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+    cursor: pointer; 
+}
+
+.sitemap {
+    margin: 50px auto;
+}
+
+.sitemap a {
+    color: #ffff;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 5px;
+    border-radius: 7px;
+    text-align: center;
+    position: relative;
+}
+
+.first {
+    padding-left: 2rem;
+    list-style: none;
+}
+
+.first li a {
+    background: rgb(253,101,2);
+    width: 150px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    margin: auto;
+}
+#home-sitemap {
+    margin-left: 39.5rem;
+}
+
+#home-sitemap:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 21px;
+    background: #9e9f9e;
+    top: 100%;
+}
+
+.first li a:hover {
+    background-color:rgb(34,166,189);
+    color: #ffff;
+}
+
+.second {
+    padding-top: 40px;
+}
+
+.second li {
+    margin-right: 1.5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.second a {
+    background: #cbcccb;
+    font-size: 16px;
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
+    z-index: 20;
+    left: 238px;
+}
+
+.second a:before {
+    content: "";
+    position: absolute;
+    border: 3px solid #9e9f9e;
+    left: 50%;
+    border-left: none;
+    border-bottom: none;
+    height: 21px;
+    top: -20px;
+    left: -97px;
+    width: 180px;
+}
+
+.second li:first-child a:before {
+    border-top: none;
+}
+
+.third {
+    margin-left: -2rem;
+    padding-top: 25px;
+}
+
+.third li{
+    margin-right: -1.7rem;
+}
+
+.third a {
+    background: #e4e4e3;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    z-index: 5;
+    font-size: 16px;
+}
+
+.third a:before {
+    border: 3px solid #9e9f9e;
+    border-right: none;
+    border-top: none;
+    height: 29px;
+    top: -30px;
+    left: 80px;
+    width: 0px;
+}
+
+.second a:hover,
+.third a:hover {
+    background-color: #ddd;
+}

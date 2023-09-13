@@ -1,0 +1,164 @@
+body{
+    background: #f3f3f3
+}
+
+a{
+    text-decoration: none;
+}
+
+.title-login{
+    text-align: center;
+    margin: 50px 0;
+    color: orangered;
+}
+
+.form-signin{
+    margin-left: -50px;
+    background-color: white;
+    width: 40rem;
+    height: 30rem;
+    align-items: center;
+    box-shadow: 0 0 2px 1px rgba(167,169,172,.2);
+}
+
+.required{
+    padding-left: 40px;
+    padding-top: 30px;
+    font-weight: 700;
+}
+
+.email{
+    margin-left: 40px;
+    width: 85%;
+    height: 40px;
+    border: 1px solid #d7dae0;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(167,169,172,.2);
+    margin-top: 20px;
+}
+
+.email:hover{background-color: antiquewhite;}
+
+.password{
+    margin-left: 40px;
+    width: 85%;
+    height: 40px;
+    border: 1px solid #d7dae0;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(167,169,172,.2);
+    margin-top: 20px;
+}
+
+.password:hover{background-color: antiquewhite;}
+
+.sign-in-form{
+    margin: 40px 0;
+}
+
+.form-submit{
+    display: inline;
+    margin-left: 40px;
+}
+
+.btn-submit{
+    width: 180px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(253,101,2);
+    color: white;
+    font-weight: 700;
+    box-shadow: inset 0 1px 0 #fff0b3, 0 0 10px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.btn-submit:hover{background-color: rgb(218, 106, 32);}
+
+.link-reset-password{
+    padding-left: 150px;
+    color: #2482b8;
+    font-weight: 500;
+}
+
+.link-reset-password:hover{color: #8db6ce;}
+
+.btn-create-acount{
+    margin-left: 40px;
+    width: 180px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
+    font-weight: 700;
+    box-shadow: inset 0 1px 0 #fff0b3, 0 0 10px 0 rgba(0,0,0,.2);
+    cursor: pointer; 
+    margin-bottom: 30px;
+}
+
+.btn-create-acount:hover{background-color: rgb(192, 190, 188);}
+
+.link-create-account{
+    color: rgb(214, 126, 93); 
+}
+
+.text-form{
+    margin: 0 40px;
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+.form-account-benefits{
+    margin-right: -50px;
+    background-color: white;
+    width: 40rem;
+    height: 30rem;
+    align-items: center;
+    box-shadow: 0 0 2px 1px rgba(167,169,172,.2);
+}
+
+.title-account-benefits{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.5rem;
+    color: rgb(214, 126, 93)
+}
+
+.list-benefits{
+    margin-left: 40px;
+}
+
+.item-benefits{
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.social{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.title-social{
+    color: gray; 
+}
+
+.list-social{
+    list-style: none;
+    display: inline-flex; 
+}
+
+.item-social{
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+
+.contact-sign-icon{
+    color: gray;
+}
+
+.main-content-login{
+    padding-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: -1rem;
+}
+

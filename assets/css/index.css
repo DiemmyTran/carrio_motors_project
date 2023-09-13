@@ -1,0 +1,189 @@
+.header{
+    margin-bottom: -1rem;
+}
+
+.header-info-top{
+    padding-top: 0.5rem;  
+    border-bottom: 4px solid;
+    border-bottom-color: rgb(253,101,2);
+    background-color: rgb(38,38,38);
+}
+
+.header-quick-info-1 {
+    margin-left: 1rem;
+    display: flex;
+    list-style: none;
+    color: grey;
+}
+
+.header-quick-info-1 li {
+    margin-right: 1.8rem;
+}
+
+.header-info-icon-left{
+    margin-right: 0.5rem;
+    color: rgb(34,171,195);
+}
+
+.header-quick-info-2 {
+    display: flex;
+    list-style: none;
+    color: grey;  
+}
+
+.header-info-icon-right{
+    margin-right: 1.5rem;
+    color: grey;
+}
+
+.visit-count-icon{
+    padding-left: 4rem;
+    margin-right: 0.5rem;
+    color: grey;
+}
+
+.header-info-second{
+    align-items: center;
+    background-color:rgb(20,22,25);
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.header-logo{
+    display: inline-block;
+    color: white;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.header-logo a{
+    color: inherit;
+}
+
+.search-bar{
+    margin-left: 2rem;
+    padding-left: 10px;
+    height: 42px;
+    width: 600px;
+    position: relative;
+    border-radius: 5px;
+    border: none
+}
+
+.btn-search{
+    position: absolute;
+    margin-left: -5.3rem;
+    margin-top: 3px;
+    height: 35px;
+    width: 80px;
+    border: none;   
+    border-radius: 5px;
+    background-color:rgb(0,70,108);
+    color: white;
+}
+
+.regis-login-icon{
+    color:rgb(253,101,2);
+    margin-right: 0.5rem;
+}
+
+.btn-regis-login{
+    background: none;
+    border-color: rgb(253,101,2);
+    border-style: solid;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    padding-right: 1.2px;
+    margin-right: 0.5rem;
+}
+
+.header-regis-login-link{
+    color: white;
+    font-size: 18px;
+    margin-right: 0.5rem;
+}
+
+.header-menu{   
+    background-color: rgb(33,39,42);
+}
+
+.header-menu-list{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    list-style: none;
+    color: white; 
+}
+
+.header-menu-list a{
+    color: white;
+    text-decoration-line: none;
+}
+
+.header-menu-item{
+    margin-right: 7.23rem;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-menu-item a:hover{
+   color: rgb(253,101,2);
+}
+
+.footer{
+    background-color: rgb(33,39,42);
+    color: white;
+   /* margin-top: 4rem;*/
+}
+
+.footer-content{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-logo{
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.footer--info-icon{
+    display: flex;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.footer-content-title{
+    font-size: 18px;
+    color: rgb(253,101,2);
+}
+
+.footer-content-list{
+    margin-top: 1rem;
+    list-style: none;
+    margin-left: -2rem;
+}
+
+.foorter-link{
+    margin-bottom: 1rem;
+}
+
+#scroll-container{
+    background-color: rgb(33,39,42);
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px rgb(56, 54, 54);
+}
+
+#scroll-text{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    color: white;
+}
+
+.copyright-text{
+    color: white;
+}

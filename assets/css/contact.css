@@ -1,0 +1,87 @@
+.form-img{
+    background-image: url('../img/about-contact/hinhnen.jpg');
+    width: 100%;
+    height: 30rem;
+    margin-top: 10px;
+}
+
+.form-img{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding-top: 150px;
+    z-index: 200;
+} 
+
+.line1{
+    padding-bottom: 20px;
+    font-size: 70px;
+    text-transform: none;
+    color: #f4f4f4;
+}
+
+.line2{
+    padding-bottom: 20px;
+    color: #f4f4f4;
+    font-size: 30px;
+}
+
+.line3{
+    color: #e2b71c;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.img-contactus{
+    width: 100%;
+}
+
+.main-content{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.form-contact{
+   padding: 30px;
+   background-color: #f4f4f4;
+   border: 1px solid #f7d4d4;
+   border-radius: 10px;
+}
+
+.message-title{
+    color: rgb(253,101,2);
+}
+
+.form-input{
+    padding-top: -2rem;
+}
+
+.form-input1{
+    padding-top: 30px;
+}
+
+.form-input2{
+    padding-top: 30px;
+}
+
+.form-input3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.input-item{
+    width: 100%;
+    height: 60px;
+    background-color: #dad5d5;
+    border: none;
+    padding: 0.5rem 25px;
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: rgb(253,101,2);
+    border: 1px solid;
+    padding: 20px 50px;
+    font: 600 16px;
+}
+
