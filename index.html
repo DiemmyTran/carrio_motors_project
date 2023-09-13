@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRIO MOTORS</title>
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/boostrap.min.css">
+    <link rel="stylesheet" href="./assets/css/boostrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/detail.css">
+    <link rel="stylesheet" href="./assets/css/sitemap.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/gallery.css">
+    <link rel="stylesheet" href="./assets/css/slide.css">
+
+    <script src="./assets/js/angular.min.js"></script>
+    <script src="./assets/js/angular-route.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slide.js"></script>
+    <script src="./assets/js/gallery.js"></script>
+    
+    <!--
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+<body ng-app="myApp">
+    <div class="header" ng-controller="HeaderController">
+        <div class="header-info-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul class="header-quick-info-1">
+                            <li>
+                                <i class="fa-solid fa-phone-volume header-info-icon-left"></i>
+                                <span>24/7! +1 755 302 8549</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope header-info-icon-left"></i>
+                                <span>support@carriomotors.com</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-clock header-info-icon-left"></i>
+                                <span>Mon - Sat: 8.30am To 9.00pm</span>
+                                
+                            </li>                           
+                        </ul>                     
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="header-quick-info-2">
+                            <li><i class="fa-brands fa-facebook-f header-info-icon-right"></i></li>                           
+                            <li><i class="fa-brands fa-twitter header-info-icon-right"></i></li>                         
+                            <li><i class="fa-brands fa-linkedin-in header-info-icon-right"></i></li>
+                            <li><i class="fa-brands fa-youtube header-info-icon-right "></i></li>
+                            <li>
+                                <i class="fa-solid fa-user visit-count-icon"></i>
+                                <span>Visitor counter: </span>
+                                <span id="visitorCount" style="color: rgb(34,171,195)"></span>
+                            </li>
+                        </ul>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <div class="header-info-second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#!/">Carrio Motors</a>
+                        </div>
+                        <i style ="color: rgb(253,101,2);" class="fa-solid fa-circle fa-xs"></i>
+                    </div>                   
+                    <div class="col-md-7">                       
+                        <input class="search-bar" type="text" placeholder="Search for makes, models,... " ng-model="$root.key">
+                        <a href="#!/product"><button class="btn-search">Search</button></a>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn-regis-login"><i class="fa-regular fa-user regis-login-icon"></i></button>               
+                        <a href="#!/register"><span class="header-regis-login-link">Sign up |</span></a>       
+                        <a href="#!/login"><span class="header-regis-login-link">Login</span></a>                                           
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="container">
+                <div class="row">  
+                        <ul class="header-menu-list">
+                            <li class="header-menu-item"><a href="#!/">HOME</a></li>
+                            <li class="header-menu-item"><a href="#!/product">PRODUCT</a></li>
+                            <li class="header-menu-item"><a href="#!/gallery">GALLERY</a></li>
+                            <li class="header-menu-item"><a href="#!/sitemap">SITEMAP</a></li>
+                            <li class="header-menu-item"><a href="#!/contact">CONTACT</a></li>
+                            <li class="header-menu-item"><a href="#!/about">ABOUT</a></li>                                                 
+                        </ul>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <div ng-view>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-content-item">
+                            <div class="footer-logo">Carrio Motors</div>
+                            <div class="address">
+                            Reg. Office: 2 Penman Way, Grove Park, Leicester, LE19 1ST Registered in England
+                            </div>
+                            <ul class="footer--info-icon">
+                                <li><i class="fa-brands fa-facebook-f header-info-icon-right"></i></li>                           
+                                <li><i class="fa-brands fa-twitter header-info-icon-right"></i></li>                         
+                                <li><i class="fa-brands fa-linkedin-in header-info-icon-right"></i></li>
+                                <li><i class="fa-brands fa-youtube header-info-icon-right "></i></li>                
+                            </ul>
+                        </div>                                   
+                    </div>
+                    <div class="col-md-3">
+                        <p class="footer-content-title">Company</p>
+                        <ul class="footer-content-list">
+                            <li class="foorter-link">About Us</li>
+                            <li class="foorter-link">Careers</li>
+                            <li class="foorter-link">Feedback</li>
+                            <li class="foorter-link">Privacy statement</li>
+                            <li class="foorter-link">Sitemap</li>                         
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="footer-content-title">Support</p>
+                        <ul class="footer-content-list">
+                            <li class="foorter-link">Help Center</li>
+                            <li class="foorter-link">Contact Us</li>
+                            <li class="foorter-link">Live Chat</li>                     
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="footer-content-title">Latest News</p>
+                        <ul class="footer-content-list">
+                            <li class="foorter-link">Automotive News</li>
+                            <li class="foorter-link">Car Previews</li>
+                            <li class="foorter-link">Green Cars</li>                     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<script src="aos-master/dist/aos.js"></script>-->
+    <!-- scroll -->
+    <div id="scroll-container">
+            <!--<span class="copyright-text">©Copyright 2023 Car Dealer</span>-->
+            <div id="scroll-text" style="display: flex;">
+                <span id="hvn"></span>
+                <span id="gps"></span>
+            <div>
+    </div>
+    <!-- end scrool -->
+    
+</body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 800, // Animation duration in milliseconds
+        easing: 'ease-in-out', // Animation easing
+        /*once: true // Animations only occur once per element*/
+    });
+    </script>
+</html>
