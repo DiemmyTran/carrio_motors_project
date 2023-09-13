@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Toyota",
+        "logo":"./assets/img/brands.logo/toyota.png"
+    },
+    {
+        "id": 2,
+        "name": "BMW",
+        "logo":"./assets/img/brands.logo/bmw.png"
+    },
+    {
+        "id": 3,
+        "name": "Huyndai",
+        "logo":"./assets/img/brands.logo/hyundai.png"
+    },
+    {
+        "id": 4,
+        "name": "Jeep",
+        "logo":"./assets/img/brands.logo/jeep.png"
+    },
+    {
+        "id": 5,
+        "name": "Kia",
+        "logo":"./assets/img/brands.logo/kia.png"
+    },
+    {
+        "id": 6,
+        "name": "MG",
+        "logo":"./assets/img/brands.logo/morris-garages.png"
+    },
+    {
+        "id": 7,
+        "name": "Suzuki",
+        "logo":"./assets/img/brands.logo/suzuki.png"
+    }
+]

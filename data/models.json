@@ -1,0 +1,165 @@
+[
+    {
+        "id": 1,
+        "name": "Camry",
+        "brand_id": 1       
+    },
+    {
+        "id": 2,
+        "name": "Corolla",
+        "brand_id": 1    
+    },
+    {
+        "id": 3,
+        "name": "Supra",
+        "brand_id": 1  
+
+    },
+    {
+        "id": 4,
+        "name": "86",
+        "brand_id": 1
+    },
+    {
+        "id": 5,
+        "name": "4Runner",
+        "brand_id": 1
+    },
+    {
+        "id": 6,
+        "name": "M2",
+        "brand_id": 2
+    },
+    {
+        "id": 7,
+        "name": "M3",
+        "brand_id": 2
+    },
+    {
+        "id": 8,
+        "name": "X3",
+        "brand_id": 2
+    },
+    {
+        "id": 9,
+        "name": "X6",
+        "brand_id": 2
+    },
+    {
+        "id": 10,
+        "name": "X7",
+        "brand_id": 2
+    },
+    {
+        "id": 11,
+        "name": "Accent",
+        "brand_id": 3
+    },
+    {
+        "id": 12,
+        "name": "Elantra",
+        "brand_id": 3
+    },
+    {
+        "id": 12,
+        "name": "IONIQ 6",
+        "brand_id": 3
+    },
+    {
+        "id": 13,
+        "name": "Santa Cruz",
+        "brand_id": 3
+    },
+    {
+        "id": 13,
+        "name": "Veloster",
+        "brand_id": 3
+    },
+    {
+        "id": 14,
+        "name": "Venue",
+        "brand_id": 3
+    },
+    {
+        "id": 15,
+        "name": "Cherokee",
+        "brand_id": 4
+    },
+    {
+        "id": 16,
+        "name": "Compass",
+        "brand_id": 4
+    },
+    {
+        "id": 17,
+        "name": "Renegade",
+        "brand_id": 4
+    },
+    {
+        "id": 18,
+        "name": "Wagoneer",
+        "brand_id": 4
+    },
+    {
+        "id": 19,
+        "name": "Wrangler",
+        "brand_id": 4
+    },
+    {
+        "id": 20,
+        "name": "Forte",
+        "brand_id": 5
+    },
+    {
+        "id": 21,
+        "name": "Niro",
+        "brand_id": 5
+    },
+    {
+        "id": 23,
+        "name": "Rio",
+        "brand_id": 5
+    },
+    {
+        "id": 24,
+        "name": "Sportage",
+        "brand_id": 5
+    },
+    {
+        "id": 25,
+        "name": "K5",
+        "brand_id": 5
+    },
+    {
+        "id": 26,
+        "name": "Astor Sharp",
+        "brand_id": 6
+    },
+    {
+        "id": 27,
+        "name": "Cyberster",
+        "brand_id": 6
+    },
+    {
+        "id": 28,
+        "name": "Marvel X",
+        "brand_id": 6
+    },
+    {
+        "id": 29,
+        "name": "XL7",
+        "brand_id": 7
+    },
+    {
+        "id": 30,
+        "name": "Swift",
+        "brand_id": 7
+    },
+    {
+        "id": 31,
+        "name": "Jymny",
+        "brand_id": 7
+    }
+
+   
+]
